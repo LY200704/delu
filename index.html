@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 100%;
+				height: 1.7rem;
+				background: url(img/banner.png);
+				background-size: 100% 100%;
+			}
+			.box1{
+				width: 100%;
+				height: 0.5rem;
+				/*border: 1px solid black;*/
+				font-size: 0.18rem;
+			}
+			.box1>ul{
+				list-style: none;
+				display: flex;
+				margin-left: 1.2rem;
+				margin-top: 0.1rem;
+			}
+			.box1>ul>li{
+				width: 0.6rem;
+				height: 0.3rem;
+				/*border: 1px solid black;*/
+				text-align: center;
+			}
+			.box1>ul>li>button{
+				width: 0.4rem;
+				height: 0.3rem;
+				border: 0;
+				background: white;
+			}
+			.box1>ul>li:hover{
+				border-bottom: 3px solid #1B787E;
+				color: #1B787E ;
+			}
+			.box1>ul>li:nth-child(1){
+				border-right: 1px solid gainsboro;
+			}
+			.box2{
+				font-size: 0.1rem;
+				position: relative;
+				width: 100%;
+				height: 1.3rem;
+				/*border: 1px solid black;*/
+			}
+			.box2>p:nth-child(1)>img{
+				width: 0.25rem;
+				height: 0.2rem;
+				position: absolute;
+				margin-left: 0.3rem;
+				margin-top: 0.22rem;
+				z-index: 33;
+			}
+			.box2>p:nth-child(1)>input{
+				font-size: 0.15rem;
+				color: gainsboro;
+				width: 2.7rem;
+				height: 0.4rem;
+				padding: 0 0 0 0.64rem;
+				position: absolute;
+				margin-top: 0.1rem;
+				margin-left: 0.2rem;
+				border: 1px solid gainsboro;
+				border-radius: 0.05rem;
+			}
+			.box2>p:nth-child(2)>img{
+				width: 0.25rem;
+				height: 0.2rem;
+				position: absolute;
+				margin-left: 0.3rem;
+				margin-top: 0.82rem;
+				z-index: 33;
+			}
+			.box2>p:nth-child(2)>input{
+				font-size: 0.15rem;
+				color: gainsboro;
+				width: 2.7rem;
+				height: 0.4rem;
+				padding: 0 0 0 0.64rem;
+				position: absolute;
+				margin-top: 0.7rem;
+				margin-left: 0.2rem;
+				border: 1px solid gainsboro;
+				border-radius: 0.05rem;
+				
+			}
+			.box3>button{
+				width: 2.7rem;
+				height: 0.5rem;
+				background: #47AAA6;
+				color: white;
+				font-size: 0.17rem;
+				text-align: center;
+				line-height: 0.3rem;
+				border-radius: 0.05rem;
+				border: 0;
+				margin-top: -1.3rem;
+				margin-left: 0.5rem;
+			}
+			.box4{
+				width: 0.8rem;
+				height: 0.3rem;
+				font-size: 0.15rem;
+				position: absolute;
+				top: 4rem;
+				margin-left: 1.5rem;
+				text-align: center;
+				color: #9A9A9A;
+				margin-top: 0.1rem;
+			}
+			.box1_1{
+				/*display: none;*/
+			}
+			.box1_2{
+				font-size: 0.1rem;
+				width: 100%;
+				height: 5rem;
+				/*border: 1px solid black;*/
+			}
+			.box5{
+				width: 100%;
+				height: 2.7rem;
+				/*border: 1px solid black;*/
+				position: relative;
+			}
+			.box5>p:nth-child(1)>img{
+				position: absolute;
+				width: 0.2rem;
+				height: 0.2rem;
+				z-index: 33;
+				margin-top: 0.22rem;
+				margin-left: 0.36rem;
+			}
+			.box5>p:nth-child(1)>input{
+				position: absolute;
+				width: 2.7rem;
+				height: 0.4rem;
+				font-size: 0.15rem;
+				padding: 0 0 0 0.64rem;
+				margin-top: 0.1rem;
+				margin-left: 0.2rem;
+				border-radius: 0.03rem;
+				border: 1px solid gainsboro;
+			}
+			.box5>p:nth-child(2)>img{
+				position: absolute;
+				width: 0.2rem;
+				height: 0.2rem;
+				z-index: 33;
+				margin-top: 0.72rem;
+				margin-left: 0.36rem;
+			}
+			.box5>p:nth-child(2)>input{
+				position: absolute;
+				width: 2.7rem;
+				height: 0.4rem;
+				font-size: 0.15rem;
+				padding: 0 0 0 0.64rem;
+				margin-top: 0.6rem;
+				margin-left: 0.2rem;
+				border-radius: 0.03rem;
+				border: 1px solid gainsboro;
+			}
+			.box5>p:nth-child(3)>img{
+				position: absolute;
+				width: 0.2rem;
+				height: 0.2rem;
+				z-index: 33;
+				margin-top: 1.2rem;
+				margin-left: 0.36rem;
+			}
+			.box5>p:nth-child(3)>input{
+				position: absolute;
+				width: 2.7rem;
+				height: 0.4rem;
+				font-size: 0.15rem;
+				padding: 0 0 0 0.64rem;
+				margin-top: 1.1rem;
+				margin-left: 0.2rem;
+				border-radius: 0.03rem;
+				border: 1px solid gainsboro;
+			}
+			.box5>p:nth-child(4)>img{
+				position: absolute;
+				width: 0.2rem;
+				height: 0.2rem;
+				z-index: 33;
+				margin-top: 1.7rem;
+				margin-left: 0.36rem;
+			}
+			.box5>p:nth-child(4)>input{
+				position: absolute;
+				width: 2.7rem;
+				height: 0.4rem;
+				font-size: 0.15rem;
+				padding: 0 0 0 0.64rem;
+				margin-top: 1.6rem;
+				margin-left: 0.2rem;
+				border-radius: 0.03rem;
+				border: 1px solid gainsboro;
+			}
+			.box5>p:nth-child(5)>img{
+				position: absolute;
+				width: 0.2rem;
+				height: 0.2rem;
+				z-index: 33;
+				margin-top: 2.2rem;
+				margin-left: 0.36rem;
+				
+			}
+			.box5>p:nth-child(5)>input{
+				position: absolute;
+				width: 2.7rem;
+				height: 0.4rem;
+				font-size: 0.15rem;
+				padding: 0 0 0 0.64rem;
+				margin-top: 2.1rem;
+				margin-left: 0.2rem;
+				border-radius: 0.03rem;
+				border: 1px solid gainsboro;
+			}
+			.box6{
+				font-size: 0.12rem;
+				text-align: center;
+				margin-top: ;
+			}
+			.box6>span{
+				color: #1B787E;
+			}
+			.box7>button{
+				width: 2.7rem;
+				height: 0.5rem;
+				background: #47AAA6;
+				color: white;
+				margin-top: 0.1rem;
+				margin-left: 0.5rem;
+				border: 0;
+				border-radius: 0.03rem;
+				font-size: 0.18rem;
+			}
+			.box1_2{
+				display: none;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			
+		</div>
+		<div class="box1">
+			<ul>
+				<li>登录</li>
+				<li>注册</li>
+			</ul>
+		</div>
+		<div class="box1_1">
+			<div class="box2">
+				<p><img src="img/idcard.png"/><input type="" name="" id="one" value=""  placeholder="请输入身份证"/></p>
+				<p><img src="img/password.png"/><input type="" name="" id="one1" value="" placeholder="请输入密码"/></p>
+			</div>
+			<p class="box3"><button class="a">登录</button></p>
+			<p class="box4">忘记密码?</p>
+		</div>
+		<div class="box1_2">
+			<div class="box5">
+				<p><img src="img/name.png"/><input type="" name="" id="one2" value="" placeholder="请输入姓名"/></p>
+				<p><img src="img/iphone.png"/><input type="" name="" id="one3" value="" placeholder="请输入手机号"/></p>
+				<p><img src="img/idcard.png"/><input type="" name="" id="one4" value="" placeholder="请输入身份证" /></p>
+				<p><img src="img/password.png"/><input type="" name="" id="one5" value="" placeholder="请设置密码"/></p>
+				<p><img src="img/password.png"/><input type="" name="" id="one6" value="" placeholder="请确认密码"/></p>
+			</div>
+			<p class="box6">注册即代表您已同意《<span><strong>注册与使用协议</strong></span>》</p>
+			<p class="box7"><button class="b">注册</button></p>
+		</div>
+	</body>
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		Zepto(function(){
+			$('.box1>ul>li:nth-child(1)').click(function(){
+				$('.box1_1').show()
+				$('.box1_2').hide()
+			});
+			$('.box1>ul>li:nth-child(2)').click(function(){
+				$('.box1_2').show()
+				$('.box1_1').hide()
+			});
+		});
+		
+	</script>
+</html>
